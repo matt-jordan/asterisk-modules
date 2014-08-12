@@ -49,7 +49,7 @@ static char *sanitize_address(char *buffer)
 	}
 
 	current = strrchr(buffer, '/');
-	current = '\0';
+	*current = '\0';
 
 	return buffer;
 }
